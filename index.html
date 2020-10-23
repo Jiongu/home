@@ -67,11 +67,36 @@
         </div>
         <div id="contato">
             <h2> Contato </h2>
-            
+            <a href="mailto:jiongu@pm.me" rel="noreferrer" target="_blank">
+                <img alt="email"
+                    src="static/ico/socialmedia/colored-circle/icon_email-32.png">
+            </a>
 
-            <h3> Formulário</h3>
             <h3> Fale conosco</h3>
-            <h3> Redes sociais</h3>
+            <form method="post" id="Fcontato" action="mailto:jiongu@pm.me" oninput="calc_total()">
+                <fieldset id="identidade">
+                    <legend>Identificação do Usuário</legend>
+                    <p>
+                        <label for="idNome">Nome : </label>
+                        <input type="text" name="Tnome" id="idNome" size="20" maxlength="30" placeholder=" Nome completo" />
+                    </p>
+    
+                    <p>
+                        <label for="idEmail">E-mail:</label>
+                        <input type="email" name="Temail" id="idEmail" size="20" maxlength="40" placeholder=" Digite seu e-mail">
+                    </p>
+    
+                <fieldset id="mensagem">
+                    <legend>Mensagem</legend>
+                    <p>
+                        <label for="idMensagem"></label>
+                        <textarea name="Tmensagem" id="idMensagem" cols="45" rows="5" placeholder="  Digite aqui sua mensagem. "></textarea>
+                    </p>
+                </fieldset>
+
+                <button>Enviar</button> &nbsp;
+                <!-- <input type="image" src="assets/image/botao-enviar.png" value="Enviar"> -->
+            </form>
 
         </div>
     </main>
@@ -102,7 +127,7 @@
                     src="static/ico/socialmedia/colored-circle/icon_youtube-32.png">
             </a>
 
-            <a href="#" rel="noreferrer" target="_blank">
+            <a href="mailto:jiongu@pm.me" rel="noreferrer" target="_blank">
                 <img alt="email"
                     src="static/ico/socialmedia/colored-circle/icon_email-32.png">
             </a>
